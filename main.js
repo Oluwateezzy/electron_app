@@ -10,7 +10,10 @@ const createWindow = () => {
         }
     })
 
-    win.loadFile('index.html')
+   win.loadURL('https://github.com')
+
+   const contents = win.webContents
+   console.log(contents)
 }
 
 app.whenReady().then(() => {
